@@ -18,7 +18,7 @@
     "material-ui": {
       "type": "confirm",
       "message": "Use material-ui as ui in your code?"
-    },
+    }
   },
   "filters": {
    
