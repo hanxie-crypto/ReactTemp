@@ -1,7 +1,8 @@
 var webpack = require('webpack');
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var autoprefixer = require('autoprefixer')
+var autoprefixer = require('autoprefixer');
+var assets = require('postcss-assets');
 var uglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 module.exports = {
   entry: [
@@ -35,7 +36,8 @@ module.exports = {
         test: /\.(css|scss)$/,
         loader: ExtractTextPlugin.extract('style-loader','css-loader!postcss-loader!sass-loader'),
       },
-      { test: /\.(ttf|eot|woff|woff2|otf|svg)/, loader: 'file-loader?name=./fonts/[name].[ext]' }
+      { test: /\.(ttf|eot|woff|woff2|otf|svg)/, loader: 'file-loader?name=./fonts/[name].[ext]' },
+      { test: /\.(png|jpg|jpeg|gif)$/, loader: 'url-loader?limit=10000&name=./images/[name].[ext]' }
     ],
   },
   resolve: {
@@ -59,6 +61,9 @@ module.exports = {
   ],
   postcss: [autoprefixer({
     browsers: ['android >= 4.0']
+  }),assets({
+    relative: true,
+    loadPaths: ['images/']
   })]
 };
 
