@@ -1,19 +1,19 @@
 {
-  "name": "electron-quick-start",
+  "name": "React Proj ",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A React Project width Redux",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
     "buildapp": "webpack --progress --colors --config webpack.config.prod.js",
     "dev": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/wq123456/ReactTemp.git"
   },
   "keywords": [
-    "react"
+    "react",
+    "redux",
   ],
   "author": "wq123456",
   "devDependencies": {
