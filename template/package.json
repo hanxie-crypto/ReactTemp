@@ -43,7 +43,9 @@
     "install": "^0.8.1",
     "isomorphic-fetch": "^2.2.1",
     "jsx-loader": "^0.12.2",
+    {{#material-ui}}
     "material-ui": "^0.15.4",
+    {{/material-ui}}
     "moment": "^2.12.0",
     "node-sass": "^3.10.0",
     "postcss-loader": "^0.13.0",
