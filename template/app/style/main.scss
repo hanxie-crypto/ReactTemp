@@ -1,8 +1,7 @@
 /* custom font icons */
-@import "font-icons/style.css";
+@import "font-materialui.scss";
+@import "font-awesome.scss";
 
-/* hightlight.js for syntax highlighting */
-@import "github.css";
 
 a {
   color: #ff4081;
@@ -31,4 +30,9 @@ body {
 .muidocs-checkbox-example {
   border: 2px solid #FF9800;
   background-color: #4CAF50;
+}
+.test {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }

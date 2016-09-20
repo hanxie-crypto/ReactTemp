@@ -1,19 +1,19 @@
 {
-  "name": "React Proj ",
+  "name": "electron-quick-start",
   "version": "1.0.0",
-  "description": "A React Project width Redux",
+  "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "buildapp": "webpack --progress --colors --config webpack.config.prod.js",
+    "start": "electron .",
+    "build": "webpack --progress --colors --config webpack.config.prod.js",
     "dev": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wq123456/ReactTemp.git"
+    "url": ""
   },
   "keywords": [
-    "react",
-    "redux",
+    "react"
   ],
   "author": "wq123456",
   "devDependencies": {
@@ -36,16 +36,16 @@
     "eslint": "^1.1.0",
     "eslint-loader": "^1.0.0",
     "eslint-plugin-react": "^3.2.2",
+    "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
     "history": "^1.13.1",
     "html-webpack-plugin": "^1.6.1",
     "install": "^0.8.1",
     "isomorphic-fetch": "^2.2.1",
     "jsx-loader": "^0.12.2",
-    {{#material-ui}}
     "material-ui": "^0.15.4",
-    {{/material-ui}}
     "moment": "^2.12.0",
+    "node-sass": "^3.10.0",
     "postcss-loader": "^0.13.0",
     "precss": "^1.4.0",
     "react": "^0.14.7",
@@ -68,6 +68,7 @@
     "redux-logger": "^2.0.3",
     "redux-simple-router": "^1.0.2",
     "redux-thunk": "^1.0.0",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.12.4",
     "transfer-webpack-plugin": "^0.1.4",
     "url-loader": "^0.5.7",

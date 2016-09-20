@@ -34,10 +34,10 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader',
+        test: /\.(css|scss)$/,
+        loader: 'style-loader!css-loader!sass-loader',
       },
-      { test: /\.(ttf|eot|woff|woff2|otf|svg)/, loader: 'file-loader?name=./font/[name].[ext]' },
+      { test: /\.(ttf|eot|woff|woff2|otf|svg)/, loader: 'file-loader?name=./fonts/[name].[ext]' },
     ],
   },
   resolve: {

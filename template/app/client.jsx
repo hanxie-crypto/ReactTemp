@@ -10,6 +10,7 @@ import routes from './routes.jsx';
 injectTapEventPlugin();
 
 
+
 const store = configureStore();//配置store
 const history = createBrowserHistory();
 

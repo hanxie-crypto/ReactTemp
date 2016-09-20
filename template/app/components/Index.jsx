@@ -3,16 +3,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 
-/*import darkBaseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import Dialog from 'material-ui/Dialog';
-import FloatingActionButton from 'material-ui/FloatingActionButton';
-import FlatButton from 'material-ui/FlatButton';
-import ContentAdd from 'material-ui/svg-icons/content/add';
-import Delete from 'material-ui/svg-icons/action/delete';
-import {grey500,deepOrange500} from 'material-ui/styles/colors';
-*/
+
+import  '../style/main.scss';
 
 class  Index extends React.Component {
 
@@ -57,15 +49,7 @@ class  Index extends React.Component {
     const styles = this.getStyles();
     return ( 
             <div style={styles.wrapper}>
-                /*<MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
-                  <div style={styles.container}>
-                  <FlatButton
-                      icon={<ContentAdd />}
-                      style={styles.add}
-              
-                  />
-                  </div>
-                </MuiThemeProvider>*/
+                <div className="test"></div>
             </div>);
   }
 }
