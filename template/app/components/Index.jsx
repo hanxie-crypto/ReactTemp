@@ -56,7 +56,7 @@ class  Index extends React.Component {
   render() {
     const styles = this.getStyles();
     return ( 
-            <div style={{color:'black'}}>
+            <div style={styles.wrapper}>
                 /*<MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
                   <div style={styles.container}>
                   <FlatButton
